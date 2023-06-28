@@ -35,6 +35,10 @@ h1 {
     font-size: 7vh;
 }
 
+#nav-text{
+    font-size: 3vh;
+}
+
 nav {
     position: absolute;
     justify-content: center;
@@ -71,7 +75,7 @@ ul{
     
     text-shadow: 3px 5px 2px rgb(99, 0, 87);
     padding: 7vh;
-    font-size: large;
+    font-size: 2.5vh;
     line-height: 1.4;
     text-align: justify;
     font-family: 'Signika Negative', sans-serif;
@@ -111,7 +115,7 @@ h2{/*Sections titles*/
 
 .formation-time {
     color: rgb(173, 173, 173);
-    font-size: medium;
+    font-size: 3vh;
     padding-top: 3vh;
     padding-left: 3vh;
     padding-right: 3vh;
@@ -119,7 +123,7 @@ h2{/*Sections titles*/
 }
 
 .formation-name {
-    font-size:larger;
+    font-size: 3.5vh;
     padding-left: 3vh;
     padding-right: 3vh;
     font-family: 'Play', sans-serif;
@@ -175,7 +179,7 @@ h2{/*Sections titles*/
 
 .service-description{
     padding: 3vh;
-    font-size: medium;
+    font-size: 2.5vh;
     line-height: 1.4;
     text-align: justify;
     font-family: 'Signika Negative', sans-serif;
@@ -198,7 +202,7 @@ h2{/*Sections titles*/
     padding-right: 3vh;
     font-family: 'Play', sans-serif;
     text-shadow: 3px 3px 2px rgb(99, 0, 87);
-    font-size: x-large;
+    font-size: 4vh;
 }
 
 .services-card{
@@ -216,29 +220,34 @@ h2{/*Sections titles*/
 #contact-paragraph{
     text-shadow: 3px 5px 2px rgb(99, 0, 87);
     padding: 5vh 5vw 1vh 4vw;
-    font-size: large;
+    font-size: 2.5vh;
     line-height: 1.4;
     text-align: justify;
     font-family: 'Signika Negative', sans-serif;
 }
 
 .contact-information{
-    font-size: large;
+    font-size: 3vh;
     font-family: 'Play', sans-serif;
 }
 
 #email-icon{
-    scale: 0.4;
+    width: 4vh;
+    margin-right: 1vw;
 }
 
 .contact-container {
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
 }
 
 #phone-icon{
-    scale: 0.4;
+    width: 3.5vh;
+    margin-right: 1vw;
 }
 
 
@@ -287,7 +296,7 @@ footer{
 
 /*Responsive solutions*/
 
-@media (max-width: 700px) {
+@media only screen and (max-width: 700px) {
     #services{
         flex-direction: column;
     }
@@ -300,6 +309,28 @@ footer{
     #services-card, #formation-card{
         margin-top: 3vh;
     }
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+    #services{
+        flex-direction: column;
+    }
+
+    #formation {
+        flex-direction: column;
+
+    }
+
+    #services-card, #formation-card{
+        margin-top: 3vh;
+    }
+
 }
 
 /*END of responsive solutions*/
